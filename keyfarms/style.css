@@ -1,0 +1,69 @@
+.paernt {
+  background-color: rgb(36, 133, 133);
+  height: 350px;
+  width: 600px;
+  margin: auto;
+  width: 50%;
+}
+.chiled {
+  background-color: rgb(255, 0, 0);
+  height: 50%;
+  width: 50%;
+  /* animation: left-to-right 1s ease-in-out forwards alternate infinite; */
+  /* alternate //we used to revers the animations */
+  /* transition: 0.8s cubic-bezier(0.85, -0.76, 0.32, 1.82); */
+}
+.chiled-btn {
+  background-color: rgb(255, 0, 0);
+  height: 50%;
+  width: 50%;
+}
+.paernt:hover .chiled {
+  background-color: blueviolet;
+  /* transform: translatex(100%); */
+  /* animation-play-state: paused; */
+  animation: left-to-right 1s ease-in-out forwards alternate infinite;
+  /* infinite; */
+}
+.paernt:hover .chiled-btn {
+  background-color: blueviolet;
+  /* transform: translatex(100%); */
+  /* animation-play-state: paused; */
+  animation: left-to-right 1s ease-in-out forwards alternate infinite;
+  /* infinite; */
+}
+.chiled2 {
+  background-color: rgb(43, 255, 0);
+  height: 50%;
+  transition: transform 1s cubic-bezier(0.54, -0.9, 0.37, 1);
+  width: 50%;
+}
+.paernt2 {
+  background-color: rgb(36, 133, 133);
+  height: 350px;
+  width: 600px;
+  margin: auto;
+  width: 50%;
+}
+.paernt2:hover .chiled2 {
+  background-color: blueviolet;
+  transform: translateX(100%);
+
+  /* animation: cubic-bezier(1, -0.24, 0.69, 2.43); */
+}
+@keyframes left-to-right {
+  0% {
+    background-color: aqua;
+    transform: translateX(0%);
+  }
+  33% {
+    background-color: rgb(129, 129, 129);
+    transform: translatey(100%);
+  }
+  66% {
+    transform: translatey(100%) translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
