@@ -1,0 +1,49 @@
+.grid-contener {
+  display: grid;
+  grid-template-columns: 200px 250px;
+  /* grid-template-rows: 200px 150px 100px; */
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 10px;
+  /* grid-column-gap: 10px; */
+  grid-template-areas:
+    " header header"
+    "sidebar content"
+    "sidebar content"
+    "footer footer";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    /* height: 50vh; */
+}
+.grid-item {
+  background-color: aqua;
+  padding: 10px;
+  border: solid 1px #000;
+}
+.grid-item-1 {
+  background-color: rgb(0, 202, 202);
+  /* grid-area: header; */
+  /* 1 it's a start column and -1 it's a end column */
+  /* grid-column: -1 / 1; */
+}
+.grid-item-2 {
+  background-color: rgb(0, 202, 202);
+  /* grid-area: sidebar; */
+  /* grid-row: span 2; */
+}
+/* .grid-item-4 { */
+/* background-color: rgb(0, 202, 202);
+  grid-area: content;
+} */
+
+.grid-item-3 {
+  background-color: rgb(0, 202, 202);
+  /* grid-area: span 3; */
+}
+.grid-item-6 {
+    background-color: rgb(0, 202, 202);
+    /* grid-column: span 2; */
+  }
+body {
+  background-color: rgb(63, 63, 63);
+}
