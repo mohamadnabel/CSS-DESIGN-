@@ -14,7 +14,7 @@
   align-content: center;
   /* justify-items: center; */
   /* height: 50vh; */
-  filter: blur(px);
+  /* filter: blur(1px); */
 }
 .grid-item {
   background-color: aqua;

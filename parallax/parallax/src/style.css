@@ -1,0 +1,9 @@
+.App {
+  /* border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%; */
+
+  border-radius: 10% 50% ;
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+}

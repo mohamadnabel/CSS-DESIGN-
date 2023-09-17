@@ -4,6 +4,7 @@ body {
 .titelOfItem {
   align-items: center;
   display: flexbox;
+  flex-wrap: wrap;
 }
 .text {
   color: yellow;
@@ -27,7 +28,9 @@ body {
   background-color: rgb(170, 169, 169);
 }
 .flexbox-item:hover {
-  transform: rotatey(180deg) ;
+  transform: rotatey(180deg) rotatex(20deg);
+  animation-name: change-color;
+  animation-duration: .5s;
 }
 .flexbox-item-1 {
   min-height: 100px;
@@ -43,4 +46,19 @@ body {
 .flexbox-item-3 {
   min-height: 300px;
   flex-grow: 1;
+}
+@keyframes change-color {
+  from {
+    background-color: rgb(170, 169, 169);
+    border: 3px solid #ffffff;
+    filter: blur(1px); 
+  }
+  to {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 7px double #ffffff;
+    box-shadow: 3px 4px rgba(85, 85, 85, 0);
+    filter: blur(2px); 
+
+  }
 }
